@@ -12,118 +12,143 @@
     function calculate() {
         var mounth= $("#mounth").val();
         var day = $("#day").val();
-       // var birthyear = Date().getFullYear() - day;
-
+       
       if(mounth == 1)
       {
         if(day >= 1 && day <= 19)
           var text = "やぎ座";
+          // $("#result").text("やぎ座");
 
         else if(day <= 31)
           var text = "みずがめ座";
+          // $("#result").text("みずがめ座");
       }
 
        else if(mounth == 2)
       {
         if(day >= 1 && day <= 18)
            var text = "みずがめ座";
+      //  $("#result").text("みずがめ座");
 
         else if(day <= 30)
          var text = "うお座";
+          //$("#result").text("うお座");
       }
 
       else if(mounth == 3)
       {
         if(day >= 1 && day <= 20)
            var text = "うお座";
+         //   $("#result").text("うお座");
 
         else if(day <= 31)
           var text = "おひつじ座";
+           //$("#result").text("おひつじ座");
       }
 
        else if(mounth == 4)
       {
         if(day >= 1 && day <= 19)
            var text = "おひつじ座";
+          //  $("#result").text("おひつじ座");
 
         else if(day <= 30)
           var text = "おうし座";
+          // $("#result").text("おうし座");
       }
 
         else if(mounth == 5)
       {
         if(day >= 1 && day <= 20)
            var text = "おうし座";
+         //   $("#result").text("おうし座");
 
         else if(day <= 31)
-          var text = "ふたご座";
+         var text = "ふたご座";
+           //$("#result").text("ふたご座");
       }
 
       else if(mounth == 6)
       {
         if(day >= 1 && day <= 21)
            var text = "ふたご座";
+         //   $("#result").text("ふたご座");
 
         else if(day <= 30)
-          var text = "かに座";
+         var text = "かに座";
+          // $("#result").text("かに座");
       }
 
       else if(mounth == 7)
       {
         if(day >= 1 && day <= 22)
            var text = "かに座";
+          //  $("#result").text("かに座");
 
         else if(day <= 31)
           var text = "しし座";
+           //$("#result").text("しし座");
       }
 
      else if(mounth == 8)
       {
         if(day >= 1 && day <= 22)
            var text = "しし座";
+        //    $("#result").text("しし座");
 
         else if(day <= 31)
-          var text = "おとめ座";
+        var text = "おとめ座";
+           //$("#result").text("おとめ座");
       }
 
      else if(mounth == 9)
       {
         if(day >= 1 && day <= 22)
            var text = "おとめ座";
+         //   $("#result").text("おとめ座");
 
         else if(day <= 30)
-          var text = "てんびん座";
+         var text = "てんびん座";
+           //$("#result").text("てんびん座");
       }
 
       else if(mounth == 10)
       {
         if(day >= 1 && day <= 23)
            var text = "てんびん座";
+          //  $("#result").text("てんびん座");
 
         else if(day <= 31)
           var text = "さそり座";
+          // $("#result").text("さそり座");
       }
 
       else if(mounth == 11)
       {
         if(day >= 1 && day <= 22)
            var text = "さそり座";
+         // $("#result").text("さそり座");
 
         else if(day <= 30)
-          var text = "いて座";
+         var text = "いて座";
+          // $("#result").text("いて座");
       }
 
      else if(mounth == 12)
       {
         if(day >= 1 && day <= 21)
            var text = "いて座";
+           // $("#result").text("いて座");
 
         else if(day <= 31)
           var text = "やぎ座";
+         // $("#result").text("やぎ座");
       }
 
-     alert(text);
+    $("#result").text("あなたの星座は"+text+"です");
     }
+
+
 
   </script>
 </head>
@@ -141,6 +166,9 @@
         <input type="text" id="day" class="input-text">
 
         <a class="button" onclick="calculate();">判定</a>
+
+        <span id="result"></span>
+
     </section>    
   </div> 
 </body>
